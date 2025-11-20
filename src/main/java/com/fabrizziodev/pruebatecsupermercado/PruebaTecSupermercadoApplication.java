@@ -1,4 +1,4 @@
-package com.fabrizziodev.PruebaTecSupermercado;
+package com.fabrizziodev.pruebatecsupermercado;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

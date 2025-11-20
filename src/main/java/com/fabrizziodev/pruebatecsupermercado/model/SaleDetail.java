@@ -1,4 +1,4 @@
-package com.fabrizziodev.PruebaTecSupermercado.model;
+package com.fabrizziodev.pruebatecsupermercado.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,31 +1,25 @@
-package com.fabrizziodev.PruebaTecSupermercado.model;
+package com.fabrizziodev.pruebatecsupermercado.dto;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 
 @Getter @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Sale {
+@Builder
+public class SaleDTO {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long saleId;
     private LocalDate date;
     private String status;
     private BigDecimal total;
-
-    @ManyToOne
-    private Branch branch;
-
-    @OneToMany (mappedBy = "sale")
-    private List<SaleDetail> saleDetails = new ArrayList<>();
+    private Long branchId;
+    private List<SaleDetailDTO> saleDetails;
 }

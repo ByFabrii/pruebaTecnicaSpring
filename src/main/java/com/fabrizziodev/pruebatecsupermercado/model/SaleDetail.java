@@ -11,6 +11,7 @@ import java.math.BigDecimal;
 @Getter @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class SaleDetail {
 
     @Id

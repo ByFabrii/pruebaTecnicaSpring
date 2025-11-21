@@ -1,6 +1,6 @@
 package com.fabrizziodev.pruebatecsupermercado.controller;
 
-import com.fabrizziodev.pruebatecsupermercado.dto.SaleDTO;
+import com.fabrizziodev.pruebatecsupermercado.model.dto.SaleDTO;
 import com.fabrizziodev.pruebatecsupermercado.service.ISaleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

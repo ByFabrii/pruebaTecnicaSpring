@@ -1,8 +1,8 @@
 package com.fabrizziodev.pruebatecsupermercado.service;
 
-import com.fabrizziodev.pruebatecsupermercado.dto.SaleDTO;
-
 import java.util.List;
+
+import com.fabrizziodev.pruebatecsupermercado.model.dto.SaleDTO;
 
 public interface ISaleService {
 

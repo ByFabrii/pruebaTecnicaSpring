@@ -1,9 +1,8 @@
 package com.fabrizziodev.pruebatecsupermercado.service;
 
-import com.fabrizziodev.pruebatecsupermercado.dto.BranchDTO;
-import com.fabrizziodev.pruebatecsupermercado.model.Branch;
-
 import java.util.List;
+
+import com.fabrizziodev.pruebatecsupermercado.model.dto.BranchDTO;
 
 public interface IBranchService {
 

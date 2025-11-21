@@ -1,4 +1,4 @@
-package com.fabrizziodev.pruebatecsupermercado.dto;
+package com.fabrizziodev.pruebatecsupermercado.model.dto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

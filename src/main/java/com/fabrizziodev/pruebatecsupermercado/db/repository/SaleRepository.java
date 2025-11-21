@@ -1,8 +1,9 @@
-package com.fabrizziodev.pruebatecsupermercado.repository;
+package com.fabrizziodev.pruebatecsupermercado.db.repository;
 
-import com.fabrizziodev.pruebatecsupermercado.model.Branch;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface BranchRepository extends JpaRepository <Branch, Long> {
+import com.fabrizziodev.pruebatecsupermercado.db.entity.Sale;
+
+public interface SaleRepository extends JpaRepository <Sale, Long> {
     // JPA Repository automatic creates CRUD methods for us, if we need to create more methods, relations, or something like that, we could create here.
 }

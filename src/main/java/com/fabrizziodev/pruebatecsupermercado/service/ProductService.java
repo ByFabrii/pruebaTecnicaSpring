@@ -1,10 +1,11 @@
 package com.fabrizziodev.pruebatecsupermercado.service;
 
-import com.fabrizziodev.pruebatecsupermercado.dto.ProductDTO;
+import com.fabrizziodev.pruebatecsupermercado.db.entity.Product;
+import com.fabrizziodev.pruebatecsupermercado.db.repository.ProductRepository;
 import com.fabrizziodev.pruebatecsupermercado.exception.NotFoundException;
 import com.fabrizziodev.pruebatecsupermercado.mapper.Mapper;
-import com.fabrizziodev.pruebatecsupermercado.model.Product;
-import com.fabrizziodev.pruebatecsupermercado.repository.ProductRepository;
+import com.fabrizziodev.pruebatecsupermercado.model.dto.ProductDTO;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

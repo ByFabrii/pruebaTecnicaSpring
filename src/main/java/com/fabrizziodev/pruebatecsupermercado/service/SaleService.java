@@ -1,16 +1,16 @@
 package com.fabrizziodev.pruebatecsupermercado.service;
 
-import com.fabrizziodev.pruebatecsupermercado.dto.SaleDTO;
-import com.fabrizziodev.pruebatecsupermercado.dto.SaleDetailDTO;
+import com.fabrizziodev.pruebatecsupermercado.db.entity.Branch;
+import com.fabrizziodev.pruebatecsupermercado.db.entity.Product;
+import com.fabrizziodev.pruebatecsupermercado.db.entity.Sale;
+import com.fabrizziodev.pruebatecsupermercado.db.entity.SaleDetail;
+import com.fabrizziodev.pruebatecsupermercado.db.repository.BranchRepository;
+import com.fabrizziodev.pruebatecsupermercado.db.repository.ProductRepository;
+import com.fabrizziodev.pruebatecsupermercado.db.repository.SaleRepository;
 import com.fabrizziodev.pruebatecsupermercado.exception.NotFoundException;
 import com.fabrizziodev.pruebatecsupermercado.mapper.Mapper;
-import com.fabrizziodev.pruebatecsupermercado.model.Branch;
-import com.fabrizziodev.pruebatecsupermercado.model.Product;
-import com.fabrizziodev.pruebatecsupermercado.model.Sale;
-import com.fabrizziodev.pruebatecsupermercado.model.SaleDetail;
-import com.fabrizziodev.pruebatecsupermercado.repository.BranchRepository;
-import com.fabrizziodev.pruebatecsupermercado.repository.ProductRepository;
-import com.fabrizziodev.pruebatecsupermercado.repository.SaleRepository;
+import com.fabrizziodev.pruebatecsupermercado.model.dto.SaleDTO;
+import com.fabrizziodev.pruebatecsupermercado.model.dto.SaleDetailDTO;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

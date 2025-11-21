@@ -3,13 +3,13 @@ package com.fabrizziodev.pruebatecsupermercado.mapper;
 import java.math.BigDecimal;
 import java.util.stream.Collectors;
 
-import com.fabrizziodev.pruebatecsupermercado.dto.BranchDTO;
-import com.fabrizziodev.pruebatecsupermercado.dto.ProductDTO;
-import com.fabrizziodev.pruebatecsupermercado.dto.SaleDTO;
-import com.fabrizziodev.pruebatecsupermercado.dto.SaleDetailDTO;
-import com.fabrizziodev.pruebatecsupermercado.model.Branch;
-import com.fabrizziodev.pruebatecsupermercado.model.Product;
-import com.fabrizziodev.pruebatecsupermercado.model.Sale;
+import com.fabrizziodev.pruebatecsupermercado.db.entity.Branch;
+import com.fabrizziodev.pruebatecsupermercado.db.entity.Product;
+import com.fabrizziodev.pruebatecsupermercado.db.entity.Sale;
+import com.fabrizziodev.pruebatecsupermercado.model.dto.BranchDTO;
+import com.fabrizziodev.pruebatecsupermercado.model.dto.ProductDTO;
+import com.fabrizziodev.pruebatecsupermercado.model.dto.SaleDTO;
+import com.fabrizziodev.pruebatecsupermercado.model.dto.SaleDetailDTO;
 
 public class Mapper {
 

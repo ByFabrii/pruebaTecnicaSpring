@@ -1,4 +1,4 @@
-package com.fabrizziodev.pruebatecsupermercado.model;
+package com.fabrizziodev.pruebatecsupermercado.db.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,20 +10,18 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.math.BigDecimal;
-
 @Getter @Setter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 @Entity
-public class Product {
-
+public class Branch {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long productId;
+    private Long branchId;
     private String name;
-    private String category;
-    private BigDecimal price;
-    private int quantity;
+    private String address;
+
+    // Constructor, getters y setters "creates" using Lombok.
+
 }

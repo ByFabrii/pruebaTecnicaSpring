@@ -7,7 +7,12 @@ import com.fabrizziodev.pruebatecsupermercado.model.dto.ProductDTO;
 public interface IProductService {
 
     List<ProductDTO> getProducts();
+
+    ProductDTO getProductById(Long productId);
+
     ProductDTO createProduct(ProductDTO productDto);
+
     ProductDTO updateProduct(Long productId, ProductDTO productDto);
+
     void deleteProduct(Long productId);
 }

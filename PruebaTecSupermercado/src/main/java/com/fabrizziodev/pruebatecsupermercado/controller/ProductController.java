@@ -31,6 +31,12 @@ public class ProductController {
         return ResponseEntity.ok(productService.getProducts());
     }
 
+    @GetMapping("/{productId}")
+    @Operation(summary = "Get a product by ID", description = "Get a product by ID")
+    public ResponseEntity<ProductDTO> getProductById(@PathVariable @Positive(message = "The product ID must be a positive number") Long productId) {
+        return ResponseEntity.ok(productService.getProductById(productId));
+    }
+
     @PostMapping
     @Operation(summary = "Create a new product", description = "Create a new product in the database")
     public ResponseEntity<ProductDTO> createProduct(@Valid @RequestBody ProductDTO productDTO) {

@@ -23,6 +23,12 @@ public class ProductService implements IProductService {
     }
 
     @Override
+    public ProductDTO getProductById(Long productId) {
+        return productRepository.findById(productId).map(Mapper::toDTO)
+                .orElseThrow(() -> new NotFoundException("Product not found"));
+    }
+
+    @Override
     public ProductDTO createProduct(ProductDTO productDto) {
         var product = Product.builder()
                 .name(productDto.getName())
@@ -51,7 +57,7 @@ public class ProductService implements IProductService {
         if (!productRepository.existsById(productId)) {
             throw new NotFoundException("Product not found");
         }
-        
+
         productRepository.deleteById(productId);
     }
 }

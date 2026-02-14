@@ -2,7 +2,7 @@
 # Etapa 1: Compilación (Builder)
 # =================
 # Usamos una imagen completa del JDK para tener todas las herramientas de compilación (Maven)
-FROM eclipse-temurin:21-jdk as builder
+FROM eclipse-temurin:21-jdk AS builder
 
 # Establecemos el directorio de trabajo dentro del contenedor
 WORKDIR /app
@@ -11,6 +11,11 @@ WORKDIR /app
 COPY .mvn/ .mvn
 COPY mvnw .
 COPY pom.xml .
+
+# Damos permisos de ejecución al wrapper de Maven
+RUN chmod +x mvnw
+
+# Descargamos las dependencias
 RUN ./mvnw dependency:go-offline
 
 # Copiamos el resto del código fuente
